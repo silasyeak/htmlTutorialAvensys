@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* Align the labels and inputs to the left */
+            label, input {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            
+            /* Add some space between the label and input */
+            label {
+                margin-right: 10px;
+            }
+            
+            /* Center the form on the page */
+            form {
+                margin: auto;
+                width: 50%;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Form</legend>
+                <table>
+                    <tr>
+                        <td><label>First Name:</label></td>
+                        <td><input type = "text" required autofocus placeholder = "Enter First Name"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Last Name:</label></td>
+                        <td><input type = "text" required autofocus placeholder = "Enter Last Name"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Email:</label></td></td><td><input type = "email" placeholder = "Enter Email"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Password:</label></td><td><input type = "password" placeholder = "Enter Password"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Age:</label></td><td><input type = "number" placeholder = "Enter Age"></td>
+                    </tr>
+                    <tr>
+                        <td></td><td><input type = "submit"></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </body>
+</html>

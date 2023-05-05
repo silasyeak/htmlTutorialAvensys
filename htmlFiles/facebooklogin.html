@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html style = "background-color: lightgrey"
+<head>
+    <style>
+ 
+        @media all and (min-width: 750px) {
+            .main-container{
+            display:flex;
+            height: 1120px;
+            /* border: solid; */
+            justify-content:center;
+            align-items: center;
+            column-gap: 50px;
+        }
+        }
+
+        @media not all and (min-width: 750px) {
+            @media screen and (min-width:750px){
+            .main-container{
+            display:flex;
+            height: 1120px;
+            /* border: solid; */
+            justify-content:center;
+            align-items: center;
+            row-gap:100px;
+            }
+            }
+        }
+        
+        .heading-container{
+            font-family: sans-serif;
+            
+        }
+        .a{
+            color: #3b5998 ;
+            font-family: sans-serif;
+            font-size: 52px;
+
+        }
+        .b{
+            color:black;
+            font-size: 28px;
+            
+        }
+        .login-container{
+            padding: 10px 10px 10px 10px;
+            height:250px;
+            width:250px;
+            background-color: white;
+            border-radius: 6px;
+            align-items:center;
+            
+            
+        }
+        .login-button{
+            background-color: lightblue;
+
+        }
+        .create-button{
+            background-color: lightgreen;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- main container is used to align the items in paragraph -->
+    <div class = "main-container">
+        <div class = "heading-container">
+            <div class = "a">
+                <b>facebook</b>
+            </div>
+            <div class = "b">
+                <span>Facebook helps you connect and share <br> with the people in your life.</span>
+            </div>
+        </div>
+        <br><br>
+       <div class="login-container" style="padding:30px;">
+        <input type="text" placeholder="Email or Phone Number" style="height: 10px; width: 240px; padding: 10px;"><br><br>
+        <input type="password" placeholder="Password" style="height: 10px; width: 240px; padding: 10px;"><br><br>
+        <button class="login-button" style="width: 250px; padding: 10px; border-radius:5px; margin-left: 10px;">Log in</button><br><br>
+        <a href="" style = "margin-left:60px;"> forgotten password?</a>
+        <hr>
+        <button class="create-button" style="padding: 10px; border-radius:5px; margin-left: 60px;">Create new Account</button>
+        </div>
+
+    </div>
+    
+</body>

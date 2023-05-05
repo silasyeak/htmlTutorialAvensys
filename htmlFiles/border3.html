@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .a{
+                height: 100px;
+                width: 100px;
+                background-color: blue;
+                position: absolute;
+                /* right: 100px; */
+                z-index:1;
+                font-size: 10px;
+                
+                /* overflow: scroll; */
+                /* overflow --> scroll, hidden or visible*/
+    
+            }
+            .b{
+                height: 100px;
+                width: 100px;
+                background-color:yellow;
+                position: absolute;
+                z-index: 0;
+                top: 20px; 
+                margin-left: 20px;
+
+            }
+            .c{
+                height: 100px;
+                width: 100px;
+                background-color: red;
+                position: absolute; 
+                z-index: -1;
+                top: 40px;
+                margin-left: 35px;
+            }
+                        
+        </style>
+    
+    </head>
+    <body>
+        <div class = "a">
+        </div>
+        <div class = "b">
+        </div>
+        <div class = "c">
+        </div>
+
+    </body>
+    
+</html>
+
+

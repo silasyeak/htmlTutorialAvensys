@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html style>
+    <head>
+    <style>
+        .container{
+            background-color: grey;
+            padding: 10px;
+            display: grid;
+            /* you can make auto auto auto, it will change the layout*/
+            grid-template-columns: auto auto auto;
+
+            grid-template-rows: 40px 100px;
+
+            /* column-gap: 20px;
+            row-gap: 20px; */
+            /*gap covers both row and col*/
+            gap: 10px 10px;
+            
+
+        }
+        .item{
+            padding: 5px;
+            font-size: 20px;
+            text-align: center;
+            border-style: dotted;
+        }
+        .item1{
+            grid-column: 1/6;
+            grid-row: 1;
+            /* grid-column: 1;
+            grid-column-start: 3;
+            grid-column-end: 3; */
+        }
+        .item2{
+            grid-row:2/8;
+            
+        }
+        .item3{
+            grid-row:2/5;
+            grid-column:2/5;
+        }
+        .item4{
+            grid-row:2/5;
+        }
+        .item5{
+            grid-column:2/6;
+            grid-row:5/8;
+        }
+    </style>
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "item item1" style = "background-color: red;">
+                Header
+            </div>
+            <div class = "item item2" style = "background-color:orange;">
+                Menu
+            </div>
+            <div class = "item item3" style = "background-color: yellow;">
+                Main
+            </div>
+            
+            <div class = "item item4" style = "background-color:blue;">
+                Right
+            </div>
+            <div class = "item item5" style = "background-color:indigo;">
+                Footer
+            </div>
+        </div>
+    </body>
+    
+
+</html>

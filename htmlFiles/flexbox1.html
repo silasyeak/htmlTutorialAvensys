@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        .container{
+            background-color:white;
+            border: solid maroon 5px;
+            /* padding: 10px; */
+            display: inline-flex;
+            height: auto;
+            
+            /*everything is 1 dimensional until it is pushed out if the pixels are too big*/
+            /* flex-wrap: wrap;  */
+            /* you can make auto auto auto, it will change the layout*/
+            grid-template-columns: auto auto auto;
+            
+            grid-template-rows: 50px;
+            /* justify-content: space-evenly; */
+            align-items: center;
+
+        }
+        .item{
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+            height: 150px;
+            color:white;
+        }
+        .item1{
+            order:-4;
+            /* width:100px; */
+        }
+        .item2{
+            order:-5;
+            
+        }
+        .item3{
+            /* align-self:flex-end */
+        }
+        .item4{
+            /* width: 1200px; */
+        }
+        .item5{
+
+        }
+        .item6{
+            order:-3;
+            
+            /* column-width:200px; */
+        }
+
+    </style>
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "item item1" style = "background-color: red; ">
+                1
+            </div>
+            <div class = "item item2" style = "background-color:orange;">
+                2
+            </div>
+            <div class = "item item3" style = "background-color: yellow; ">
+                3
+            </div>
+            <div class = "item item4" style = "background-color:green;">
+                4
+            </div>
+            <div class = "item item5" style = "background-color:blue;">
+                5
+            </div>
+            <div class = "item item6" style = "background-color:indigo;">
+                6
+            </div>
+        </div>
+    </body>
+    
+
+</html>
