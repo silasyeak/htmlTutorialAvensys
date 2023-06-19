@@ -1,0 +1,100 @@
+<p>cop1 works!</p>
+
+
+{{audi}}
+{{benz}}
+{{ducatti}}<br><br>
+
+<!-- <div [ngSwitch]="superpower">
+
+    <div *ngSwitchCase="'Batman'">This is power of Batman</div>
+    <div *ngSwitchCase="'Flash'">This is power of Flash</div>
+    <div *ngSwitchCase="'Wonderwoman'">This is power of Wonderwoman</div>
+    <div *ngSwitchCase="'superman'">This is the power of superman</div>
+    <div *ngSwitchCase="'newguy'">This is power of newguy</div>
+</div> -->
+
+
+<!-- <div [ngStyle]="{'color':'green'}">This is the NgStyle structural directive</div>
+
+<div [ngStyle]="{'color':r,'background-color':g}">This is the NgStyle structural directive</div>
+
+<div [ngStyle]="{'color':r === 'red'?'red':'blue'}">
+This is the third block
+</div> -->
+
+<!-- <h1 class="c1">{{sentance}}</h1>
+
+<div [ngClass]="class">This is an NgClass imports</div>
+
+<div [ngClass]=" class === 'c1'?'c1 c2':'c3 c4'">This is an conditional ngClass Imports</div>
+
+<div [ngClass]="{c4:true,c2:false,c1:true}">
+    This is the Boolean values
+</div> -->
+
+
+<!-- <div [innerHTML]="sentance">
+
+
+
+
+</div>
+
+<h1 [title]="h">This is the COP1 heading</h1>
+
+<h2 [style.color]="g">{{h}}</h2> -->
+
+<!-- <table style="background-color: grey;">
+    <tr>
+        <td>VALUE ONE</td>
+        <td>VALUE TWO</td>
+        <td>VALUE THREE</td>
+
+    </tr>
+    <tr>
+        <td [attr.colspan]="val">VALUE FOUR</td>
+        
+        <td>VALUE SIX</td>
+
+    </tr>
+</table>-->
+
+
+    <!-- <button (click)="hello()">CLICK ON IT</button>
+
+<div (mouseover)="a(true,'133',33)">
+    move the mouse over
+</div> -->
+
+
+<!-- <input [(ngModel)]="superpower"><span>{{superpower}}</span>
+
+<p [innerHTML]="superpower"></p> -->
+
+<button mat-button color="primary">Primary</button>
+
+<h2>Angular pipes</h2>
+
+<div>
+    {{lower_Case | lowercase}}
+</div>
+<div>
+    {{upper_Case | uppercase}}
+</div>
+
+<div>
+    {{date_exm | date : 'long' | lowercase}}
+</div>
+
+<div>
+  <h3>{{obj | json | uppercase}}</h3>  
+</div>
+
+<div>
+    {{num_val | currency : 'IND'}}
+</div>
+
+<div>
+    {{num_val2 | percent : '3.3-5'}}
+</div>

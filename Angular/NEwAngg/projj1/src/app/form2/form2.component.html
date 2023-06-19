@@ -1,0 +1,58 @@
+<p>form2 works!</p>
+
+
+<form [formGroup]="addForm">
+    <table>
+        <tr>
+    <input type="text" formControlName="fn">
+
+    <span style="color:red" *ngIf="addForm.get('fn').hasError('required') && addForm.get('fn').touched">Need to fill the entry</span>
+
+    <span style="color: orange;" *ngIf="addForm.get('fn').hasError('minlength') && addForm.get('fn').touched">Should have Minimum of 5 characters </span>
+
+</tr>
+<tr>
+    <input type="text" formControlName="type">
+
+</tr>
+<tr>
+
+
+    <textarea formControlName="description"></textarea>
+</tr>
+<!-- <tr>
+
+     <div formArrayName="users">
+    <div *ngFor="let c of addForm.controls['users']['controls'];let i=index">
+        <input type="text" [formControlName]="i">
+    </div>
+    </div>
+
+</tr> -->
+
+
+
+<div formArrayName="users">
+    <div *ngFor="let c of addForm.controls['users']['controls'];let i =index;" [formGroupName]="i">
+        <input type="text" formControlName="name">
+        <input type="text" formControlName="Marks" (blur)="assign(i)">
+        <input type="text" formControlName="branch">
+        <button (click)="remove_element(i)">REMOVE</button>
+        <!-- <button (click)="assign(i)">ASSIGN</button> -->
+    </div>
+</div>
+
+
+
+
+</table>
+    <button (click)="addval()" [disabled]="!addForm.valid">CLICK ON</button>
+
+    <button (click)="resetForm()">RESET FORM</button>
+    <button (click)="addUser()">ADD FORM ELEMENTS</button>
+    
+  
+</form>
+
+
+

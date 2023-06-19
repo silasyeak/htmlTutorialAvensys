@@ -1,0 +1,18 @@
+<br><br>
+<form #addForm="ngForm" (submit)="fun1(addForm)">
+    <label>firstname :</label>
+    <select name = "option" [(ngModel)] = "option">
+        <option>Option One</option>
+        <option>Option Two</option>
+        <option>Option Three</option>
+    </select><br><br>
+    <input type="checkbox" [ngModel] = "terms" name = "terms">AGREE FOR TERMS & CONDTIONS<br><br>
+    <input type = "text" [(ngModel)] = "val1" name = "val1"><br><br>
+    <input type = "text" [(ngModel)] = "val2" name = "val2"><br><br>
+    <br>
+    <textarea [ngModel] = "description" name = "decription"
+    maxlength = "10"></textarea>
+    <br><br>
+    <button type="submit" [disabled]="!addForm.valid">SUBMIT</button>
+    <button (click)="resetForm(addForm)">RESET</button>
+</form>
