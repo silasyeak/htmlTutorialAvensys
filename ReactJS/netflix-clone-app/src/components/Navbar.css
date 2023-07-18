@@ -1,0 +1,21 @@
+
+span a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: rgb(212,212,212);
+  transition : all 0.3s ease;
+}
+
+.container {
+  display: flex;
+  gap:1rem;
+  align-items: center;
+
+}
+
+.active {
+  font-size: 1.25rem;
+  color:rgb(255,255,255)
+}
